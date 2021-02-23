@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 id="title">Survey Tiziano form</h1>
+        <p id="description"><i>Let me see how much you know about me</i></p>
+        <p><i>... But first, give me some infos</i></p>
+        <h5><i>(they'll be used against you =) )</i></h5>
+    </header>
+
+    <form id="start-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required>
+            
+        </div>
+        <button id="start" type="button">... Click here  to start</button>
+    </form>
+
+    <form id="survey-form">
+
+        <div class="form-group">
+            <label for="age" id="number-label">Age:</label>
+            <input id="number" class="required-input" name="age" type="number" placeholder="My age" min="10" max="100">
+        </div>
+        <div class="form-group">
+            <p>Which adjective describes me best?</p>
+            <select name="ciccio" id="dropdown">
+                <option value="nice">Nice</option>
+                <option value="funny">Funny</option>
+                <option value="empathic">Empathic</option>
+                <option value="harsh">Harsh</option>
+                <option value="ragged">Ragged</option>
+                <option value="solitary">Solitary</option>
+            </select>
+        </div>
+        <div id="radio-group" class="form-group">
+            <p>What do I like the most in my life?</p>
+            <div>
+                <label class="container">
+                    <input type="radio" name="likings" value="friends" checked>Friends<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="likings" value="eating">Eating<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="likings" value="studying">Studying<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="likings" value="playing-games">Playing Games<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="likings" value="reading">Reading<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="likings" value="playing">Playing Instruments<span class="checkmark checkmark-radio"></span>
+                </label>
+                <label class="container">
+                    <input type="radio"  name="likings" value="roller-blading">RollerBlading<span class="checkmark checkmark-radio"></span>
+                </label>
+            </div>
+        </div>
+        <div id="checkbox-group" class="form-group">
+            <p>Which uni exams do I have left?</p>
+            <div class="sub-group">
+
+                <div>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="math">Math<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="Dati">Dati<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="phisiology">Phisiology<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="phisics">Phisics<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                </div>
+
+                <div>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="math2">Math2<span class="checkmark checkmark-checkbox"></span> 
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="informatics">Informatics<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="electronics">Electronics<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="biomaterials">Biomaterials<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                </div>
+
+                <div>
+                    <label class="container">
+                        <input type="checkbox" checked name="uni-subjects" value="automatic-controls">Automation<span class="checkmark checkmark-checkbox"></span> 
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="electromagnetic-fields">EM Fields<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="system-theory">Sys Theory<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox" name="uni-subjects" value="bioelectronics">Bioelectronics<span class="checkmark checkmark-checkbox"></span>
+                    </label>
+
+                </div>
+                <label class="container select-all">
+                    <input type="checkbox" id="all-the-above" value="all-the-above">All the above<span class="checkmark checkmark-checkbox"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <textarea name="recommendation" rows="6" placeholder="Do you remember the first time we met?"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <button id="submit" class="btn" type="button">Submit</button>
+        </div>
+    </form>
+
+    <div id="final-screen">
+        <h2>I sincerely do hope you liked it :-*</h2>
+        <h3>Let me know if it was otherwise :)</h3>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

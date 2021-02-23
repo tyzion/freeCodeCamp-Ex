@@ -1,0 +1,155 @@
+* {
+    color: #F4F1EC;
+}
+body {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.24);
+    /*  */
+    background-image: linear-gradient(rgba(13, 32, 58, 0.384), rgba(13, 32, 58, 0.384)), url("https://media.urbanpost.it/wp-content/uploads/2020/11/Freddie-mercury1.jpg");
+    /* background-color: rgba(13, 32, 58, 0.801); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+#main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* background-color: rgba(13, 32, 58, 0.801); */
+    margin-bottom: 10px;
+    margin: -10px;
+}
+
+h1 {
+    /* color: rgb(17, 0, 255); */
+    color: #F4F1EC;
+    font-size: 56px;
+    margin: 10px;
+}
+
+#img-div {
+    border: 10px;
+    padding-right: -30px;
+    margin: 0;
+    margin-bottom: 70px;
+}   
+
+#img-div img {
+    display: block;
+    margin: auto;
+    max-width: 78%;
+}
+#img-caption {
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #img-caption {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+#tribute-info, #tribute-link-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#tribute-info div{
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: black;
+    justify-content: center;
+}
+
+#tribute-info h2, h3, p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#tribute-link-section div{
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: black;
+    justify-content: center;
+}
+
+#tribute-link-section div h2{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: rgba(226, 223, 48, 0.712);
+    transition: 0.4s;
+}
+
+#tribute-link:hover {
+    color: rgba(196, 205, 218, 0.658);
+
+}
+
+#queen-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+#queen-img-div {
+    width: 50%;
+}
+
+#queen-section img {
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+    width: 80%;
+    margin: 20px;
+}
+
+
+footer {
+    background-color: black;
+    margin: 100px -10px -10px -10px;
+    display: flex;
+    max-height: 100px;
+    justify-content: center;
+}
